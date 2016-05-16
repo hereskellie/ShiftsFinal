@@ -1,23 +1,80 @@
+//FUNCTIONS TO OUTPUT THE EMPLOYEES
 
+$(function Emp1(){
 
-/*
+// Get a database reference to our posts
+var employeeref = new Firebase("https://shiftsapp.firebaseio.com/employees/emp1");
 
-* rosterjava.js
+// Attach an asynchronous callback to read the data at our posts reference
+employeeref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  $('#Emp1').html(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
 
+});
 
-*
+ $(function Emp2(){
 
-* Version information e.g. Version 6
+// Get a database reference to our posts
+var employee2ref = new Firebase("https://shiftsapp.firebaseio.com/employees/emp2");
 
-*
+// Attach an asynchronous callback to read the data at our posts reference
+employee2ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  $('#Emp2').html(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
 
-* Date e.g. 19/04/2016
+});
 
-* @author Kellie Hughes, X12388761
+  $(function Emp3(){
 
-*
+// Get a database reference to our posts
+var employee3ref = new Firebase("https://shiftsapp.firebaseio.com/employees/emp3");
 
-*/
+// Attach an asynchronous callback to read the data at our posts reference
+employee3ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  $('#Emp3').html(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
+
+});
+
+   $(function Emp4(){
+
+// Get a database reference to our posts
+var employee4ref = new Firebase("https://shiftsapp.firebaseio.com/employees/emp4");
+
+// Attach an asynchronous callback to read the data at our posts reference
+employee4ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  $('#Emp4').html(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
+
+});
+
+   $(function Emp5(){
+
+// Get a database reference to our posts
+var employee5ref = new Firebase("https://shiftsapp.firebaseio.com/employees/emp5");
+
+// Attach an asynchronous callback to read the data at our posts reference
+employee5ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  $('#Emp5').html(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
+
+});
+
  //ROSTERS SAVING 
  //ROSTERS FOR MONDAYS
  $(function Monday(){
@@ -47,24 +104,24 @@
       var enter1 = enter1Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj1 = {};
-		obj1[dateMonday] = {
-    	emp1:emp1put1, 
-    	emp2:emp2put1, 
-    	emp3:emp3put1, 
-    	emp4:emp4put1, 
-    	emp5:emp5put1
-		}
-
-		dateMondayRef.child(dateMonday).update({
+    var obj1 = {};
+    obj1[dateMonday] = {
       emp1:emp1put1, 
-    	emp2:emp2put1, 
-    	emp3:emp3put1, 
-    	emp4:emp4put1, 
-    	emp5:emp5put1});
-		enter1Field.val('');
-    	}
-  	});
+      emp2:emp2put1, 
+      emp3:emp3put1, 
+      emp4:emp4put1, 
+      emp5:emp5put1
+    }
+
+    dateMondayRef.child(dateMonday).update({
+      emp1:emp1put1, 
+      emp2:emp2put1, 
+      emp3:emp3put1, 
+      emp4:emp4put1, 
+      emp5:emp5put1});
+    enter1Field.val('');
+      }
+    });
 
 });
 
@@ -99,23 +156,23 @@ $(function Tuesday(){
       var enter2 = enter2Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj2 = {};
-		obj2[dateTuesday] = {
-    	emp1:emp1put2, 
-    	emp2:emp2put2,
-    	emp3:emp3put2, 
-    	emp4:emp4put2, 
-    	emp5:emp5put2
-		}
+    var obj2 = {};
+    obj2[dateTuesday] = {
+      emp1:emp1put2, 
+      emp2:emp2put2,
+      emp3:emp3put2, 
+      emp4:emp4put2, 
+      emp5:emp5put2
+    }
 
-		dateTuesdayRef.child(dateTuesday).update({emp1:emp1put2, 
-    	emp2:emp2put2, 
-    	emp3:emp3put2, 
-    	emp4:emp4put2, 
-    	emp5:emp5put2});
-		enter2Field.val('');
-    	}
-  	});
+    dateTuesdayRef.child(dateTuesday).update({emp1:emp1put2, 
+      emp2:emp2put2, 
+      emp3:emp3put2, 
+      emp4:emp4put2, 
+      emp5:emp5put2});
+    enter2Field.val('');
+      }
+    });
 
 });
 
@@ -147,23 +204,23 @@ $(function Wednesday(){
       var enter3 = enter3Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj3 = {};
-		obj3[dateWednesday] = {
-    	emp1:emp1put3, 
-    	emp2:emp2put3,
-    	emp3:emp3put3, 
-    	emp4:emp4put3, 
-    	emp5:emp5put3
-		}
+    var obj3 = {};
+    obj3[dateWednesday] = {
+      emp1:emp1put3, 
+      emp2:emp2put3,
+      emp3:emp3put3, 
+      emp4:emp4put3, 
+      emp5:emp5put3
+    }
 
-		dateWednesdayRef.child(dateWednesday).update({emp1:emp1put3, 
-    	emp2:emp2put3, 
-    	emp3:emp3put3, 
-    	emp4:emp4put3, 
-    	emp5:emp5put3});
-		enter3Field.val('');
-    	}
-  	});
+    dateWednesdayRef.child(dateWednesday).update({emp1:emp1put3, 
+      emp2:emp2put3, 
+      emp3:emp3put3, 
+      emp4:emp4put3, 
+      emp5:emp5put3});
+    enter3Field.val('');
+      }
+    });
 
 });
 
@@ -195,24 +252,24 @@ $(function Thurday(){
       var enter4 = enter4Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj4 = {};
-		obj4[dateThursday] = {
-    	emp1:emp1put4, 
-    	emp2:emp2put4,
-    	emp3:emp3put4, 
-    	emp4:emp4put4, 
-    	emp5:emp5put4
-		}
+    var obj4 = {};
+    obj4[dateThursday] = {
+      emp1:emp1put4, 
+      emp2:emp2put4,
+      emp3:emp3put4, 
+      emp4:emp4put4, 
+      emp5:emp5put4
+    }
 
-		dateThursdayRef.child(dateThursday).update({
-		emp1:emp1put4, 
-    	emp2:emp2put4, 
-    	emp3:emp3put4, 
-    	emp4:emp4put4, 
-    	emp5:emp5put4});
-		enter4Field.val('');
-    	}
-  	});
+    dateThursdayRef.child(dateThursday).update({
+    emp1:emp1put4, 
+      emp2:emp2put4, 
+      emp3:emp3put4, 
+      emp4:emp4put4, 
+      emp5:emp5put4});
+    enter4Field.val('');
+      }
+    });
 
 });
 
@@ -244,24 +301,24 @@ $(function Friday(){
       var enter5 = enter5Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj5 = {};
-		obj5[dateFriday] = {
-    	emp1:emp1put5, 
-    	emp2:emp2put5,
-    	emp3:emp3put5, 
-    	emp4:emp4put5, 
-    	emp5:emp5put5
-		}
+    var obj5 = {};
+    obj5[dateFriday] = {
+      emp1:emp1put5, 
+      emp2:emp2put5,
+      emp3:emp3put5, 
+      emp4:emp4put5, 
+      emp5:emp5put5
+    }
 
-		dateFridayRef.child(dateFriday).update({
-		emp1:emp1put5, 
-    	emp2:emp2put5, 
-    	emp3:emp3put5, 
-    	emp4:emp4put5, 
-    	emp5:emp5put5});
-		enter5Field.val('');
-    	}
-  	});
+    dateFridayRef.child(dateFriday).update({
+    emp1:emp1put5, 
+      emp2:emp2put5, 
+      emp3:emp3put5, 
+      emp4:emp4put5, 
+      emp5:emp5put5});
+    enter5Field.val('');
+      }
+    });
 
 });
 
@@ -293,24 +350,24 @@ $(function Saturday(){
       var enter6 = enter6Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj6 = {};
-		obj6[dateSaturday] = {
-    	emp1:emp1put6, 
-    	emp2:emp2put6,
-    	emp3:emp3put6, 
-    	emp4:emp4put6, 
-    	emp5:emp5put6
-		}
+    var obj6 = {};
+    obj6[dateSaturday] = {
+      emp1:emp1put6, 
+      emp2:emp2put6,
+      emp3:emp3put6, 
+      emp4:emp4put6, 
+      emp5:emp5put6
+    }
 
-		dateSaturdayRef.child(dateSaturday).update({
-		emp1:emp1put6, 
-    	emp2:emp2put6, 
-    	emp3:emp3put6, 
-    	emp4:emp4put6, 
-    	emp5:emp5put6});
-		enter6Field.val('');
-    	}
-  	});
+    dateSaturdayRef.child(dateSaturday).update({
+    emp1:emp1put6, 
+      emp2:emp2put6, 
+      emp3:emp3put6, 
+      emp4:emp4put6, 
+      emp5:emp5put6});
+    enter6Field.val('');
+      }
+    });
 
 });
 
@@ -342,24 +399,24 @@ $(function Sunday(){
       var enter7 = enter7Field.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-		var obj7 = {};
-		obj7[dateSunday] = {
-    	emp1:emp1put7, 
-    	emp2:emp2put7,
-    	emp3:emp3put7, 
-    	emp4:emp4put7, 
-    	emp5:emp5put7
-		}
+    var obj7 = {};
+    obj7[dateSunday] = {
+      emp1:emp1put7, 
+      emp2:emp2put7,
+      emp3:emp3put7, 
+      emp4:emp4put7, 
+      emp5:emp5put7
+    }
 
-		dateSundayRef.child(dateSunday).update({
-		emp1:emp1put7, 
-    	emp2:emp2put7, 
-    	emp3:emp3put7, 
-    	emp4:emp4put7, 
-    	emp5:emp5put7});
-		enter7Field.val('');
-    	}
-  	});
+    dateSundayRef.child(dateSunday).update({
+    emp1:emp1put7, 
+      emp2:emp2put7, 
+      emp3:emp3put7, 
+      emp4:emp4put7, 
+      emp5:emp5put7});
+    enter7Field.val('');
+      }
+    });
 
 });
 
@@ -368,50 +425,90 @@ var numDays = 7;
 
 $(window.employees = function (){
   var empurl = "https://shiftsapp.firebaseio.com/employees/";
-  id = "emp";
-
-  var emp1 = new Firebase(empurl+id+"1");
-  emp1.on("value", function(snapshot) {
+  
+  var person1;
+  var datapull = new Firebase(empurl);
+  datapull.on("value", function(snapshot) {
   console.log(snapshot.val());
-  $('#emp1').html(snapshot.val());
+  console.log(datapull);
+  person1 = snapshot.val();
+  console.log(person1);
+  $('#datapull').html(snapshot.val());
   }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
   });
 
-  var emp2 = new Firebase(empurl+id+"2");
-  emp2.on("value", function(snapshot) {
+  var person2;
+  var datapull = new Firebase(empurl);
+  datapull.on("value", function(snapshot) {
   console.log(snapshot.val());
-  $('#emp2').html(snapshot.val());
+  console.log(datapull);
+  person2 = snapshot.val();
+  console.log(person2);
+  $('#datapull').html(snapshot.val());
   }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
   });
 
-  var emp3 = new Firebase(empurl+id+"3");
-  emp3.on("value", function(snapshot) {
-  console.log(snapshot.val());
-  $('#emp3').html(snapshot.val());
-  }, function (errorObject) {
-  console.log("The read failed: " + errorObject.code);
-  });
+  displayEmployees(person1, "person1");
+  displayEmployees(person2, "person2");
 
-  var emp4 = new Firebase(empurl+id+"4");
-  emp4.on("value", function(snapshot) {
-  console.log(snapshot.val());
-  $('#emp4').html(snapshot.val());
-  }, function (errorObject) {
-  console.log("The read failed: " + errorObject.code);
-  });
-
-  var emp5 = new Firebase(empurl+id+"5");
-  emp5.on("value", function(snapshot) {
-  console.log(snapshot.val());
-  $('#emp5').html(snapshot.val());
-  }, function (errorObject) {
-  console.log("The read failed: " + errorObject.code);
-  });
 
 });
 
+$(window.displayEmployees = function (arrayEmp, empCode){
+  var arrayEmp = arguments[0];
+  var empCode = arguments[1];
+  if(arrayEmp != null)
+  {
+    console.log("arrayEmp");
+    console.log(arrayEmp.emp1);
+    id1 = '#emp1'.concat(empCode);
+    $(id1).html(arrayEmp.emp1);
+
+    console.log(arrayEmp.emp2);
+    id2 = '#emp2'.concat(empCode);
+    $(id2).html(arrayEmp.emp2);
+
+    console.log(arrayEmp.emp3);
+    id3 = '#emp3'.concat(empCode);
+    $(id3).html(arrayEmp.emp3);
+
+    console.log(arrayEmp.emp4);
+    id4 = '#emp5'.concat(empCode);
+    $(id4).html(arrayEmp.emp4);
+
+    console.log(arrayEmp.emp5);
+    id5 = '#emp5'.concat(empCode);
+    $(id5).html(arrayEmp.emp5);
+  }
+  else
+  {
+    var nodata = " "
+    console.log("arrayEmp");
+    console.log(nodata);
+    id1 = '#emp1'.concat(empCode);
+    $(id1).html(nodata);
+
+    console.log(nodata);
+    id2 = '#emp2'.concat(empCode);
+    $(id2).html(nodata);
+
+    console.log(nodata);
+    id3 = '#emp3'.concat(empCode);
+    $(id3).html(nodata);
+
+    console.log(nodata);
+    id4 = '#emp4'.concat(empCode);
+    $(id4).html(nodata);
+
+    console.log(nodata);
+    id5 = '#emp5'.concat(empCode);
+    $(id5).html(nodata);
+    console.log(id1, id2, id3, id4, id5);
+  }
+
+});
 
 $(window.setCurrentDate = function (){
   rosterdate = new Date();
@@ -626,6 +723,6 @@ $(window.computeDate = function (numberOfDays){
 
 
 
-$(function Testing(){
+(function Testing(){
   return 'Testing Is Working'
 });

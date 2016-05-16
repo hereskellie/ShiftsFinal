@@ -51,13 +51,16 @@
     <div id='cssmenu'>
         <ul>
             <li>
-                <a href='roster0702.php'><span>Rosters</span></a>
+                <a href='roster.php'><span>Rosters</span></a>
             </li>
             <li>
                 <a href='request.php'><span>Request</span></a>
             </li>
             <li class='active'>
                 <a href='chat2.php'><span>Chat</span></a>
+            </li>
+            <li class='active'>
+                <a href='search.php'><span>Search</span></a>
             </li>
             <li class='last'>
                 <a href='manager.php'><span>Manager</span></a>

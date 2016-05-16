@@ -67,6 +67,11 @@ h1{
   border-top-right-radius: 0;
 }
 
+.newrosters{
+  width:600px;
+  height: 300px; 
+}
+
 
 .manreq  {border-collapse:collapse;border-spacing:0;background-color:#a0d4a4}
 .manreq td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -79,13 +84,19 @@ h1{
 
 
 
-.roster  {border-collapse:collapse;border-spacing:0;background-color:#33FF66;padding:10px;}
-.roster td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.roster th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.roster  {border-collapse:collapse;border-spacing:0;background-color:#33FF66;padding:5px;}
+.roster td{font-family:Arial, sans-serif;font-size:14px;padding:5px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.roster th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:5px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .roster .tg-baqh{text-align:center;vertical-align:top}
 .roster .tg-jlrw{font-size:16px;text-align:center}
 .roster .tg-yw4l{vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+div.tg-wrap { overflow: auto; }
+
+.rosterform{
+  width: 75%;
+}
 
 .rosterclicks{
   -moz-box-shadow: 0px 5px 2px 0px #1c1b18;
@@ -301,6 +312,36 @@ h1{
   }
 }
 
+pre {
+  height: 300px;
+  width: %;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #fafafa;
+  border: 1px solid #999;
+  font-family: 'Courier New', 'Courier', monospaced;
+}
+
+button,
+input,
+select {
+  font-size: 28px;
+}
+
+.hide {
+  display: none;
+}
+
+p a { margin-right: 5px; display: inline-block; }
+
+p a:after {
+    content:", ";
+}
+
+p a:last-child:after {
+    content:"";
+}
 
 
 

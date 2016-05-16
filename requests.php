@@ -50,7 +50,7 @@
     <!-- Navigation Bar -->
   <div id='cssmenu'>
 <ul>
-   <li><a href='roster0702.php'><span>Rosters</span></a></li>
+   <li><a href='roster.php'><span>Rosters</span></a></li>
    <li><a href='request.php'><span>Request</span></a></li>
    <li><a href='chat2.php'><span>Chat</span></a></li>
    <li><a href='manager.php'><span>Manager</span></a></li>

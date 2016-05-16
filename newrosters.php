@@ -46,9 +46,10 @@
 
   <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='roster0702.php'><span>Rosters</span></a></li>
+   <li class='active'><a href='roster.php'><span>Rosters</span></a></li>
    <li><a href='request.php'><span>Request</span></a></li>
    <li><a href='chat2.php'><span>Chat</span></a></li>
+   <li><a href='search.php'><span>Search</span></a></li>
    <li><a href='manager.php'><span>Manager</span></a></li>
    <li><a href='register.php'><span>New User</span></a></li>
    <li><a href='newrosters.php'><span>New Roster</span></a></li>
@@ -68,73 +69,73 @@
 <center><div class="tg-wrap"><table class="roster">
   <tr>
     <th class="tg-jlrw">Name</th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date1Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date2Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date3Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date4Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date5Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date6Input"></th>
-    <th class="tg-yw4l"><input type="text" placeholder="enter date" class="form-control" id="date7Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date1Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date2Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date3Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date4Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date5Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date6Input"></th>
+    <th class="tg-yw4l"><input type="date" placeholder="enter date" class="rosterform" id="date7Input"></th>
   </tr>
   <tr>
-    <td class="tg-baqh" id="Emp1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp1Input7"></td>
+    <td class="tg-baqh" id="emp1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp1Input7"></td>
   </tr>
   <tr>
-    <td class="tg-baqh" id="Emp2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp2Input7"></td>
+    <td class="tg-baqh" id="emp2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp2Input7"></td>
   </tr>
   <tr>
-    <td class="tg-baqh" id="Emp3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp3Input7"></td>
+    <td class="tg-baqh" id="emp3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp3Input7"></td>
   </tr>
   <tr>
-    <td class="tg-baqh" id="Emp4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp4Input7"></td>
+    <td class="tg-baqh" id="emp4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp4Input7"></td>
   </tr>
   <tr>
-    <td class="tg-baqh" id="Emp5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="form-control" id="emp5Input7"></td>
+    <td class="tg-baqh" id="emp5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter shift" class="rosterform" id="emp5Input7"></td>
   </tr>
   <tr>
     <td class="tg-baqh">Type Enter</td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter1"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter2"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter3"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter4"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter5"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter6"></td>
-    <td class="tg-yw4l"><input type="text" placeholder="enter" class="form-control" id="enter7"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter1"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter2"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter3"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter4"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter5"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter6"></td>
+    <td class="tg-yw4l"><input type="text" placeholder="enter" class="rosterform" id="enter7"></td>
   </tr>
 </table>
 

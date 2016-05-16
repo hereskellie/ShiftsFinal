@@ -50,7 +50,7 @@
     <div id='cssmenu'>
         <ul>
             <li>
-                <a href='roster0702.php'><span>Rosters</span></a>
+                <a href='roster.php'><span>Rosters</span></a>
             </li>
             <li class='active'>
                 <a href='request.php'><span>Requests</span></a>
