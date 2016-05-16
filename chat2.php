@@ -81,7 +81,7 @@
             <label for="nameInput"><font color="white">Name:</font></label>
             <input id='nameInput' placeholder='enter your name' type='text'>
             <div id="messagewindow">
-                <ul class="example-chat-messages" id='example-messages'></ul>
+                <ul style="overflow-y: scroll;" class="example-chat-messages" id='example-messages'></ul>
             </div><label><font color="white">Message:</font></label> <input id=
             'messageInput' placeholder='Type a message...' type='text'>
         </div>

@@ -159,22 +159,21 @@ div.tg-wrap { overflow: auto; }
 .tp .tp-wv9z{font-size:22px;text-align:center}
 
 #chatwindow{
+  overflow-y: auto;
     
     width: 600px;
     height:350px;
     background-color: #696969;
-    border: 3px solid #000; /* if you wish to use all of your space, use
-    position:absolute; top:0;left:0;right:0;bottom:0;
-    or drop the chatdwindow div */
+    border: 3px solid #000; 
 }
 #messagewindow, #inputcontainer{
-    
+    overflow-y: auto;
     left:0;
     right:0;
     border:3px solid #000;
 }
 #messagewindow{   
-    overflow:auto;
+    overflow-y: auto;
     top:0;
     bottom:3em;
 }
